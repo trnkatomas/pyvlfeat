@@ -26,7 +26,8 @@ typedef vl_int32 vl_ikm_acc ;  /**< IKM accumulator data type */
 VL_EXPORT 
 enum VlIKMAlgorithms {
   VL_IKM_LLOYD,       /**< Lloyd algorithm */
-  VL_IKM_ELKAN        /**< Elkan algorithm */
+  VL_IKM_ELKAN,        /**< Elkan algorithm */
+  VL_IKM_ANN        /**< ANN algorithm */
 } ;
   
 /** ------------------------------------------------------------------
