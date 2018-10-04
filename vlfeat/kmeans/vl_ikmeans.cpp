@@ -47,6 +47,8 @@ PyObject * vl_ikmeans_python(
 		method_type = VL_IKM_LLOYD;
 	} else if (strcmp("elkan", method) == 0) {
 		method_type = VL_IKM_ELKAN;
+	} else if (strcmp("ann", method) == 0) {
+		method_type = VL_IKM_ANN;
 	} else {
 		assert(0);
 	}
@@ -62,6 +64,9 @@ PyObject * vl_ikmeans_python(
 			break;
 		case VL_IKM_ELKAN:
 			method_name = "Elkan";
+			break;
+		case VL_IKM_ANN:
+			method_name = "ANN";
 			break;
 		default:
 			assert (0);
